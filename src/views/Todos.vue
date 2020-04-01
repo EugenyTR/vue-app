@@ -39,10 +39,8 @@
             fetch('https://jsonplaceholder.typicode.com/todos?_limit=3')
                 .then(response => response.json())
                 .then(json => {
-                    setTimeout(() => {
                         this.todos = json
                         this.loading = false
-                    }, 1000)
                 })
         },
         //watch: {
